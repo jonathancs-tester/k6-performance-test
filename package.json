@@ -1,0 +1,17 @@
+{
+  "name": "k6-performance-automation",
+  "version": "1.0.0",
+  "description": "k6-performance-automation",
+  "scripts": {
+    "pretest": "rm -rf results/",
+    "4casthub:k6:test": "dotenv -e .env -- cross-var cross-env k6 run %PROJECT%/%FEATURE%.js --http-debug --out csv=results/%FEATURE%-%TEST_TYPE%-%VUS%vus.csv"
+  },
+  "author": "jonathancs-tester",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv-cli": "6.0.0",
+    "cross-env": "^7.0.3",
+    "cross-var": "1.1.0",
+    "eslint": "^8.20.0"
+  }
+}
