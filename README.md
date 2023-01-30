@@ -27,7 +27,7 @@ To run this project, you will need to add the following environment variables to
 
 ##### CONFIG
 
-`PROJECT`: project name of the test execution, i.e, time-series, classification or feature-store.
+`PROJECT`: project name of the test execution, i.e, project, project1 and, project2.
 
 `TEST_TYPE`: 
 
